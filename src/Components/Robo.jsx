@@ -7,7 +7,7 @@ Source: https://sketchfab.com/3d-models/cyberpunk-robot-79369b97f0d74fd1a5c4fe82
 Title: Cyberpunk Robot
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {

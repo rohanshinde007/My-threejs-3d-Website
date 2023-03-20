@@ -126,7 +126,7 @@ const Navbar = () => {
                 </Links>
 
                 <Icons>
-                   <Link to={"#contact"}><Button>Bye Now</Button> </Link> 
+                   <Link to={"#C"}><Button>Bye Now</Button> </Link> 
 
                 </Icons>
             </Container>

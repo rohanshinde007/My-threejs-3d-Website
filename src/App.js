@@ -4,10 +4,12 @@ import Hero from './Components/Hero';
 import Who from './Components/Who';
 import Works from './Components/Works';
 import Contact from '../src/Components/Contact/Contact';
+import Lastpage from '../src/Components/Lastpage/Lastpage'
 
 import styled from 'styled-components';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import Projects from './Components/Projects/Projects';
 
 
 
@@ -34,7 +36,9 @@ function App() {
     <Hero/>
     <Who/>
     <Works/>
+    <Projects/>
     <Contact/>
+    <Lastpage/>
 
     </Container>
     </BrowserRouter>

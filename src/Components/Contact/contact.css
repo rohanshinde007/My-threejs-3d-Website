@@ -1,9 +1,12 @@
 
+
+
 .epps {
     text-align: center;
+ 
     /* width: 50%; */
     width: 100%;
-    height: 130vh;
+    height: 140vh;
     /* background-image: url('../../Images/ccpp.jpg'); */
     display: flex;
     flex-direction: column;
@@ -13,13 +16,14 @@
  #contac{
     width: 100%;
     /* scroll-snap-align: center; */
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
   #contid{
-    margin-top: 2vh;
+    margin-top: 8vh;
     font-size: 5vh;
   }
 

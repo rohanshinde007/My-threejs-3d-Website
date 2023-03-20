@@ -1,8 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import styled from "styled-components";
 
-import { OrbitControls } from "@react-three/drei";
-import { Canvas, useThree } from "@react-three/fiber";
+// import { OrbitControls } from "@react-three/drei";
+import { Canvas} from "@react-three/fiber";
 import Media from 'react-media';
 
 
@@ -13,6 +13,7 @@ import Camera from './BigIntro/Camera'
 import Cactus from './BigIntro/Cactus'
 import Icon from './BigIntro/Icon'
 import Pyramid from './BigIntro/Pyramid'
+import { HashLink as Link } from "react-router-hash-link";
 
 
 
@@ -192,7 +193,7 @@ const Who = () => {
           Welcome to our website! We are a team of experts specializing in website development, game development, and digital marketing. Our team is composed of talented designers, developers, and marketers who are passionate about delivering high-quality services to our clients. <br /> <br />
 
           </Desc>
-          <Button>See our works</Button>
+          <Link to={'#W'}><Button>See our works</Button></Link>
         </Right>
       </Container>
     </Section>
