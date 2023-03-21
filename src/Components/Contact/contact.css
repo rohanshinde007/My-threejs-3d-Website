@@ -1,123 +1,106 @@
-
-
-
 .epps {
-    text-align: center;
- 
-    /* width: 50%; */
-    width: 100%;
-    height: 140vh;
-    /* background-image: url('../../Images/ccpp.jpg'); */
-    display: flex;
-    flex-direction: column;
- 
-  }
- 
- #contac{
-    width: 100%;
-    /* scroll-snap-align: center; */
+  text-align: center;
+  width: 100%;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  #contid{
-    margin-top: 8vh;
-    font-size: 5vh;
-  }
+}
 
-  #forms{
-    width: 60%;
-    scroll-snap-align: center;
-    margin:3vh auto ;
-    border: 1px solid rgb(144, 142, 142);
-    border-radius: 2vh;
-    box-shadow: rgb(164, 207, 245) 3px 3px 6px 0px inset, rgba(77, 75, 75, 0.5) -3px -3px 6px 1px inset;
-    display: flex;
-    flex-direction: column;
+#contac {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
+#contid {
+  margin-top: 8vh;
+  font-size: 5vh;
+}
 
-  .repus{
-    font-size: 2.7vh;
-    margin :0vh 5vh  0vh 5vh;
-    padding: 1vh;
-    border: none;
-    border-radius: 1vh;
-    outline: none;
-  }
+#forms {
+  width: 60%;
+  scroll-snap-align: center;
+  margin: 3vh auto;
+  border: 1px solid rgb(144, 142, 142);
+  border-radius: 2vh;
+  box-shadow: rgb(164, 207, 245) 3px 3px 6px 0px inset, rgba(77, 75, 75, 0.5) -3px -3px 6px 1px inset;
+  display: flex;
+  flex-direction: column;
 
-  .repus::placeholder{
-    font-size: 2.7vh;
-   
-  }
+}
 
-#label{
+.repus {
+  font-size: 2.7vh;
+  margin: 0vh 5vh 0vh 5vh;
+  padding: 1vh;
+  border: none;
+  border-radius: 1vh;
+  outline: none;
+}
+
+.repus::placeholder {
+  font-size: 2.7vh;
+
+}
+
+#label {
   font-size: 2vh;
   margin-top: 1vh;
-
-  /* display: flex;
-  flex: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; */
 }
-b{
-  color:red;
+
+b {
+  color: red;
 }
 
 
-  #btn{
-    margin-bottom: 2vh;
-    margin-top: 3vh;
-    width: 92.2%;
-    font-size: 2vh;
-    background-color:rgb(82, 157, 7);
-    border: none;
-    /* color: black; */
-    color: white;
-    padding: 1vh;
-    /* margin: 4.4vh; */
-  
-    border-radius: 0.7vh;
-  }
+#btn {
+  margin-bottom: 2vh;
+  margin-top: 3vh;
+  width: 92.2%;
+  font-size: 2vh;
+  background-color: rgb(82, 157, 7);
+  border: none;
+  color: white;
+  padding: 1vh;
+  border-radius: 0.7vh;
+}
 
-  #btn:hover{
-background-color: rgb(58, 113, 4);
-  }
+#btn:hover {
+  background-color: rgb(58, 113, 4);
+}
 
 
 
-  @media only screen and (max-width: 1200px) {
-   
-.epps {
+@media only screen and (max-width: 1200px) {
+
+  .epps {
     text-align: center;
-    /* width: 50%; */
     width: 100%;
     height: 100vh;
-    /* background-image: url('../../Images/ccpp.jpg'); */
     display: flex;
     flex-direction: column;
   }
- 
- #contac{
+
+  #contac {
     width: 100%;
-    /* scroll-snap-align: center; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  #contid{
+
+  #contid {
     margin-top: 2vh;
     font-size: 5vh;
   }
 
-  #forms{
+  #forms {
     scroll-snap-align: none;
     width: 90%;
-    margin:3vh auto ;
+    margin: 3vh auto;
     border: 1px solid rgb(144, 142, 142);
     border-radius: 2vh;
     box-shadow: rgb(164, 207, 245) 3px 3px 6px 0px inset, rgba(77, 75, 75, 0.5) -3px -3px 6px 1px inset;
@@ -126,37 +109,35 @@ background-color: rgb(58, 113, 4);
 
   }
 
-  .repus{
+  .repus {
     font-size: 2.7vh;
-    margin :0vh 5vh  0vh 5vh;
+    margin: 0vh 5vh 0vh 5vh;
     padding: 1vh;
     border: none;
     border-radius: 1vh;
     outline: none;
   }
 
-  .repus::placeholder{
+  .repus::placeholder {
     font-size: 2.7vh;
-   
+
   }
 
 
-  #btn{
+  #btn {
     margin-bottom: 2vh;
     margin-top: 3vh;
     width: 82%;
     font-size: 2vh;
-    background-color:rgb(82, 157, 7);
+    background-color: rgb(82, 157, 7);
     border: none;
-    /* color: black; */
     color: white;
     padding: 1vh;
-    /* margin: 4.4vh; */
-  
+
     border-radius: 0.7vh;
   }
 
-  #btn:hover{
-background-color: rgb(58, 113, 4);
+  #btn:hover {
+    background-color: rgb(58, 113, 4);
   }
-  }
+}

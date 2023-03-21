@@ -10,7 +10,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const Section = styled.div`
   height: 100vh;
-  /* width: 1400px; */
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -25,14 +24,11 @@ const Section = styled.div`
 
 const Container = styled.div`
   height: 100%;
-  /* scroll-snap-align: center; */
-  /* width: 1400px; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 1200px) {
     width: 100%;
-    /* height: 150vh; */
     flex-direction: column-reverse;
     align-items: center;
     justify-content:center;
@@ -51,8 +47,6 @@ const Left = styled.div`
     flex: 1;
     margin-left: 0;
     align-items: center;
-    
-    /* justify-content: none; */
   }
 
  
@@ -150,51 +144,51 @@ const Hero = () => {
             <Subtitle>What we Do</Subtitle>
           </WhatWeDo>
           <Desc>
-           
-Transforming your online vision into reality with our expertise in web development and digital marketing!
+
+            Transforming your online vision into reality with our expertise in web development and digital marketing!
           </Desc>
-         <Link to={'#S'}> <Button>Learn More</Button></Link>
+          <Link to={'#S'}> <Button>Learn More</Button></Link>
         </Left>
         <Right>
 
 
           <Media queries={{ small: { maxWidth: 768 } }}>
-    {matches =>
-      matches.small ? (
-        <Canvas>
-        <Suspense fallback={null}>
-              <OrbitControls enableZoom={false} />
-              <ambientLight intensity={1} />
-              <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={1.7}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
-            </Suspense>
-          </Canvas>
-      ) : (
-        <Canvas>
-        <Suspense fallback={null}>
-              <OrbitControls enableZoom={false} />
-              <ambientLight intensity={1} />
-              <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
-            </Suspense>
-          </Canvas>
-      )
-    }
-      </Media>
+            {matches =>
+              matches.small ? (
+                <Canvas>
+                  <Suspense fallback={null}>
+                    <OrbitControls enableZoom={false} />
+                    <ambientLight intensity={1} />
+                    <directionalLight position={[3, 2, 1]} />
+                    <Sphere args={[1, 100, 200]} scale={1.7}>
+                      <MeshDistortMaterial
+                        color="#3d1c56"
+                        attach="material"
+                        distort={0.5}
+                        speed={2}
+                      />
+                    </Sphere>
+                  </Suspense>
+                </Canvas>
+              ) : (
+                <Canvas>
+                  <Suspense fallback={null}>
+                    <OrbitControls enableZoom={false} />
+                    <ambientLight intensity={1} />
+                    <directionalLight position={[3, 2, 1]} />
+                    <Sphere args={[1, 100, 200]} scale={2.4}>
+                      <MeshDistortMaterial
+                        color="#3d1c56"
+                        attach="material"
+                        distort={0.5}
+                        speed={2}
+                      />
+                    </Sphere>
+                  </Suspense>
+                </Canvas>
+              )
+            }
+          </Media>
 
 
 

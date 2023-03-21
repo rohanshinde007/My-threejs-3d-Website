@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-// import { OrbitControls } from "@react-three/drei";
-import { Canvas} from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import Media from 'react-media';
 
 
@@ -34,7 +32,6 @@ const Section = styled.div`
 
 const Container = styled.div`
   height: 100vh;
-  /* scroll-snap-align: center; */
   width:100%;
   display: flex;
   justify-content: space-between;
@@ -50,9 +47,7 @@ const Container = styled.div`
 const Left = styled.div`
   flex: 1;
   @media only screen and (max-width: 1200px) {
-    /* display: none; */
     flex: 1;
-   /* max-height: 100vh; */
   }
 `;
 
@@ -100,7 +95,6 @@ const Desc = styled.p`
     text-align: center;
     margin: 0.6vh;
   }
-  /* margin:3.3vh; */
 `;
 
 const Button = styled.button`
@@ -123,63 +117,57 @@ const Who = () => {
     <Section id="S">
       <Container>
         <Left>
-       
-      {/* <color attach="background" args={['#e0b7ff']} /> */}
+
+
+          <Media queries={{ medium: { maxWidth: 599 } }}>
+            {matches =>
+              matches.medium ? (
+
+                <Canvas flat dpr={[1, 2]} camera={{ fov: 32, position: [0, 0, 7] }}>
+                  <ambientLight />
+                  <PresentationControls
+                    global
+                    zoom={0.8}
+                    rotation={[0, -Math.PI / 4, 0]}
+                    polar={[0, Math.PI / 4]}
+                    azimuth={[-Math.PI / 4, Math.PI / 4]}>
+                    <group position-y={-1.0} dispose={null}>
+                      <Level />
+                      <Sudo />
+                      <Camera />
+                      <Cactus />
+                      <Icon />
+                      <Pyramid />
+                    </group>
+                  </PresentationControls>
+                </Canvas>
 
 
 
-      <Media queries={{ medium: { maxWidth: 599 } }}>
-    {matches =>
-      matches.medium ? (
-       
-<Canvas flat dpr={[1, 2]} camera={{ fov: 32, position: [0, 0, 7] }}>
-      <ambientLight />
-      <PresentationControls
-        global
-        zoom={0.8}
-        rotation={[0, -Math.PI / 4, 0]}
-        polar={[0, Math.PI / 4]}
-        azimuth={[-Math.PI / 4, Math.PI / 4]}>
-        <group position-y={-1.0}  dispose={null}>
-          <Level />
-          <Sudo />
-          <Camera />
-          <Cactus />
-          <Icon />
-          <Pyramid />
-        </group>
-      </PresentationControls>
-      </Canvas>
+              ) : (
 
+                <Canvas flat dpr={[1, 2]} camera={{ fov: 32, position: [0, 0, 7] }}>
+                  <ambientLight />
+                  <PresentationControls
+                    global
+                    zoom={0.8}
+                    rotation={[0, -Math.PI / 4, 0]}
+                    polar={[0, Math.PI / 4]}
+                    azimuth={[-Math.PI / 4, Math.PI / 4]}>
+                    <group position-y={-1.0} dispose={null}>
+                      <Level />
+                      <Sudo />
+                      <Camera />
+                      <Cactus />
+                      <Icon />
+                      <Pyramid />
+                    </group>
+                  </PresentationControls>
+                </Canvas>
 
-
-      ) : (
-
-      <Canvas flat dpr={[1, 2]} camera={{ fov: 32, position: [0, 0, 7] }}>
-      <ambientLight />
-      <PresentationControls
-        global
-        zoom={0.8}
-        rotation={[0, -Math.PI / 4, 0]}
-        polar={[0, Math.PI / 4]}
-        azimuth={[-Math.PI / 4, Math.PI / 4]}>
-        <group position-y={-1.0}  dispose={null}>
-          <Level />
-          <Sudo />
-          <Camera />
-          <Cactus />
-          <Icon />
-          <Pyramid />
-        </group>
-      </PresentationControls>
-      </Canvas>
-
-      )
-    }
-  </Media>
-
-      
-
+              )
+            }
+          </Media>
 
 
         </Left>
@@ -190,7 +178,7 @@ const Who = () => {
             <Subtitle>Who we Are</Subtitle>
           </WhatWeDo>
           <Desc>
-          Welcome to our website! We are a team of experts specializing in website development, game development, and digital marketing. Our team is composed of talented designers, developers, and marketers who are passionate about delivering high-quality services to our clients. <br /> <br />
+            Welcome to our website! We are a team of experts specializing in website development, game development, and digital marketing. Our team is composed of talented designers, developers, and marketers who are passionate about delivering high-quality services to our clients. <br /> <br />
 
           </Desc>
           <Link to={'#W'}><Button>See our works</Button></Link>

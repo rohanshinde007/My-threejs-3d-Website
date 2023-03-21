@@ -3,7 +3,6 @@ import styled from "styled-components";
 import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
 import Game from "./GameDevelopment";
-// import Projects from "./Projects/Projects";
 
 const data = [
   "Web Design",
@@ -13,12 +12,10 @@ const data = [
 
 
 const Main = styled.div`
-  /* height: 200vh; */
 
 `;
 const Section = styled.div`
   height: 105vh;
-  /* width: 100%; */
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -36,7 +33,6 @@ const Section = styled.div`
 const Container = styled.div`
   width: 100%;
   display: flex;
-  /* justify-content: space-between; */
   @media only screen and (max-width: 1200px) {
     width: 100%;
     flex-direction: column;
@@ -106,38 +102,37 @@ const Works = () => {
   const [work, setWork] = useState("Web Design");
   return (
     <>
-    <Main>
-    <Section id="W">
-      <Container>
-        <Left>
-          <List>
-          {data.map((item) => (
-              <ListItem key={item} text={item} onClick={() => setWork(item)}>
-                {item}
-              </ListItem>
-            ))}
-          </List>
-        </Left>
-        <Right>
+      <Main>
+        <Section id="W">
+          <Container>
+            <Left>
+              <List>
+                {data.map((item) => (
+                  <ListItem key={item} text={item} onClick={() => setWork(item)}>
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </Left>
+            <Right>
 
-        {work === "Web Design" ? (
-            <WebDesign />
-          ) : work === "Digital Marketing" ?  (
-            <ProductDesign />
-          ) : (
-            <Game/>
-          )}
-          
+              {work === "Web Design" ? (
+                <WebDesign />
+              ) : work === "Digital Marketing" ? (
+                <ProductDesign />
+              ) : (
+                <Game />
+              )}
 
 
-        </Right>
-      </Container>
-    
-    </Section>
-    {/* <Projects/> */}
-    </Main>
+
+            </Right>
+          </Container>
+
+        </Section>
+      </Main>
     </>
-       
+
   );
 };
 

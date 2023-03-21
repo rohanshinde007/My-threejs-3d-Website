@@ -18,8 +18,6 @@ scroll-snap-align: center;
 
 
   @media only screen and (max-width: 1360px) {
-    /* height: 199vh; */
-    /* scroll-snap-align: none; */
     width: 90%;
     scroll-snap-align: none;
   }
@@ -40,8 +38,7 @@ const Container = styled.div`
   }
 
   @media only screen and (max-width: 1260px) {
-    /* height: 199vh; */
-    /* scroll-snap-align: none; */
+
     width: 100%;
   }
 
@@ -52,7 +49,7 @@ const Links = styled.div`
   align-items: center;
   gap: 30px;
   @media only screen and (max-width: 1360px) {
-    /* height: 199vh; */
+
    gap: 5vh;
   }
 
@@ -60,7 +57,7 @@ const Links = styled.div`
 
 const Logo = styled.img`
 height: 70px;
-/* width: 150px; */
+
 
 @media only screen and (max-width: 1360px) {
     height:7vh;
@@ -78,8 +75,6 @@ const List = styled.ul`
     display: none;
   }
   @media only screen and (max-width: 1360px) {
-    /* height: 199vh; */
-    /* scroll-snap-align: none; */
    gap: 20px;
   }
 `;
@@ -111,27 +106,27 @@ const Icons = styled.div`
 `;
 
 const Navbar = () => {
-    return (
-        <Section>
-            <Container>
-                <Links>
-                <Logo src="./Img/logo.png"/>
-                <List>
-                <Link style={{textDecoration: 'none'}} to={"#H"} smooth> <ListItem>Home</ListItem></Link> 
-                <Link style={{textDecoration: 'none'}}  to={"#S"} smooth>   <ListItem> Studio </ListItem></Link>
-                <Link style={{textDecoration: 'none'}}  to={"#W"} smooth>    <ListItem> Works </ListItem></Link>
-                <Link style={{textDecoration: 'none'}} to={"#C"} smooth>   <ListItem> Contact us</ListItem></Link> 
-                </List>
-             
-                </Links>
+  return (
+    <Section>
+      <Container>
+        <Links>
+          <Logo src="./Img/logo.png" />
+          <List>
+            <Link style={{ textDecoration: 'none' }} to={"#H"} smooth> <ListItem>Home</ListItem></Link>
+            <Link style={{ textDecoration: 'none' }} to={"#S"} smooth>   <ListItem> Studio </ListItem></Link>
+            <Link style={{ textDecoration: 'none' }} to={"#W"} smooth>    <ListItem> Works </ListItem></Link>
+            <Link style={{ textDecoration: 'none' }} to={"#C"} smooth>   <ListItem> Contact us</ListItem></Link>
+          </List>
 
-                <Icons>
-                   <Link to={"#C"}><Button>Bye Now</Button> </Link> 
+        </Links>
 
-                </Icons>
-            </Container>
-        </Section>
-    )
+        <Icons>
+          <Link to={"#C"}><Button>Bye Now</Button> </Link>
+
+        </Icons>
+      </Container>
+    </Section>
+  )
 }
 
 export default Navbar

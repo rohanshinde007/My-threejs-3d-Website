@@ -27,20 +27,20 @@ const Container = styled.div`
   &::-webkit-scrollbar{
     display: none;
   }
-`; 
+`;
 function App() {
   return (
     <BrowserRouter>
-     <Container>
+      <Container>
 
-    <Hero/>
-    <Who/>
-    <Works/>
-    <Projects/>
-    <Contact/>
-    <Lastpage/>
+        <Hero />
+        <Who />
+        <Works />
+        <Projects />
+        <Contact />
+        <Lastpage />
 
-    </Container>
+      </Container>
     </BrowserRouter>
   );
 }
